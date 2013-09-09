@@ -2,7 +2,6 @@
 
 <?php if (is_front_page()): ?>
       <?php if (have_posts()) : while (have_posts()) : the_post();?>
-
       <?php if (is_front_page()) remove_filter( 'the_content', 'wpautop' ); ?>
       <?php the_content();?>
 
