@@ -1,0 +1,60 @@
+#v2-nav {
+	background: url(../img/sprite.jpg) 0 -181px repeat-x;
+	height: 74px;
+}
+
+#v2-nav button {
+	margin-top: 20px;
+}
+
+.v2-main {
+	margin-top: 74px;
+	background: url(../img/sprite.jpg) 0 -255px repeat-x;
+	border-top: 1px solid #060;
+}
+
+#billboard {
+	height: 232px;
+	background: url(../img/face-billboard.jpg) top right no-repeat;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+#billboard p {
+	color: #fff;
+	font-size: 2.5em;
+	font-family: 'Share Tech Mono', 'Lucida Console', arial;
+	margin: 20px 0 0;
+}
+
+#v2-nav-links ul {
+	background: #000;
+}
+
+#v2-nav-links a {
+	color: #ccc;
+	font-family: 'Share Tech Mono', 'Lucida Console', arial;
+	font-size: 1.5em;
+	text-decoration: none;
+	margin: 13px 0 0 0;
+	font-weight: 400;
+}
+
+#v2-nav-links a:hover {
+	color: #0a0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media ( min-width : 768px) {
+	#v2-nav-links ul {
+		background: transparent;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media ( min-width : 992px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media ( min-width : 1200px) {
+}
