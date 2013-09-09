@@ -8,12 +8,17 @@
 }
 
 .v2-main {
-	margin-top: 74px;
-	background: url(../img/sprite.jpg) 0 -255px repeat-x;
-	border-top: 1px solid #060;
+	margin-top: 94px;
 }
 
 #billboard {
+	margin-top: -20px;
+	background: url(../img/sprite.jpg) 0 -255px repeat-x;
+	border-top: 1px solid #060;
+	background: url(../img/sprite.jpg) 0 -255px repeat-x;
+}
+
+#billboard .face {
 	height: 232px;
 	background: url(../img/face-billboard.jpg) top right no-repeat;
 	overflow: hidden;
@@ -25,6 +30,14 @@
 	font-size: 2.5em;
 	font-family: 'Share Tech Mono', 'Lucida Console', arial;
 	margin: 20px 0 0;
+}
+
+#billboard p strong {
+	color: #0f0;
+}
+
+#billboard p span {
+	color: #888;
 }
 
 #v2-nav-links ul {
@@ -44,6 +57,49 @@
 	color: #0a0;
 }
 
+.light-panel {
+	border: 1px solid #333;
+	border-top: 1px solid #fff;
+	box-shadow: 0 -1px 1px #333;
+	background: #ccc;
+	margin: 20px auto;
+	padding: 0;
+}
+
+.post_summary,.recent_posts {
+	width: 100%;
+	font-size: initial;
+}
+
+p {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 2.25em;
+}
+
+#footer p {
+	font-size: 12px;
+}
+
+/* Small devices only */
+@media ( max-width : 767px) {
+	.blog-posts img {
+		width: 100%;
+		height: auto;
+	}
+	#footer ul {
+		margin: 10px 0 0;
+	}
+	#footer li {
+		margin: 5px;
+	}
+	#footer a {
+		margin: 0;
+	}
+}
 /* Small devices (tablets, 768px and up) */
 @media ( min-width : 768px) {
 	#v2-nav-links ul {

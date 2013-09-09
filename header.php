@@ -56,17 +56,14 @@
 	</nav>
 	<div class="v2-main">
 	<?php if(is_front_page()):?>
-   <div id="billboard" class="container">
-		<div class="col-md-9">
-				<p>I am a web application developer specialized in coding awesome stuff. I'm also deeply involved in native mobile development, game development, and open source projects.
-				</p>
-		</div>
-		</div>
+   <div id="billboard">
+      <div class="container face">
+   		<div class="col-md-10">
+   				<p>
+   				<strong>I am a software engineer</strong> fascinated with developing web applications, android mobile apps, and video games for the Nintendo Wii U console system. My first book was published in 2013.
+   				</p>
+   		</div>
+      </div>
 	</div>
-
 <?php endif;?>
-	</div>
-
-<div id="main">
-		<div class="w980">
-			<div class="w560boxit10">
+   <div class="container light-panel">

@@ -1,7 +1,4 @@
-</div>
-<div class="w400boxit10bl">
-
-<?php 
+<?php
 
 if(is_front_page())
 {
@@ -24,6 +21,3 @@ else
 }
 
 ?>
-</div>
-</div>
-</div>

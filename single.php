@@ -1,5 +1,6 @@
-<?php get_header();?>
+<?php get_header();?><!-- Def main --><!-- Def main > container  -->
 
+<div class="col-md-8 blog-posts"><!-- Def main > container > left-col  -->
 <h1 class="coolTitle">\ <?php the_title(); ?></h1>
 <p>
 	Author: <a
@@ -52,22 +53,6 @@ if (function_exists('echo_ald_crp'))
 <hr />
 
 
-<?php
-//
-// TODO: add comments.php
-//
-?>
-
-<?php
-/**
- * **************************************************
- * Comments Form
- * ****************************************************
- */
-// comment_form(array('must_log_in' => false, 'comment_notes_after' => ''));
-?>
-<?php //comments_template(); ?>
-
 <h1 class="coolTitle">\ Post your comments</h1>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -78,10 +63,15 @@ if (function_exists('echo_ald_crp'))
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-comments" data-href="<?= the_permalink(); ?>"
-	data-width="540" data-num-posts="23"></div>
+	data-width="320" data-num-posts="23"></div>
 
+</div> <!-- End main > container > left-col  -->
+<div class="col-md-4"><!-- Def main > container > right-col  -->
 <?php get_sidebar();?>
+</div> <!-- End main > container > right-col  -->
 
+</div> <!-- End main > container  -->
+</div> <!-- End main -->
 <?php get_footer();?>
 
 <!-- AddThis Welcome BEGIN -->
