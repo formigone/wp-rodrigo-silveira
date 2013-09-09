@@ -15,7 +15,7 @@
   <link rel="alternate" type="application/rss+xml" href="<?php bloginfo('comments_rss2_url') ?>" title="<?php printf( __( '%s latest comments', 'your-theme' ), wp_specialchars( get_bloginfo('name'), 1 ) ); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
- <script type="text/javascript" src="/js/sliderman.1.3.7.js"></script>
+ <script type="text/javascript" src="<?= bloginfo("template_directory"); ?>/js/sliderman.1.3.7.js"></script>
 </head>
 <body>
 
