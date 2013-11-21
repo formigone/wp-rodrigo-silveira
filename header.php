@@ -53,7 +53,7 @@
    <div id="billboard">
       <div class="container">
          <div class="row">
-            <div class="col-md-12 block">
+            <div class="col-xs-12 col-sm-12 col-md-12 block">
                <p>
                   <strong>I am a software engineer</strong> fascinated with developing web applications, android mobile
                   apps, and video games for the Nintendo Wii U console system. My first book was published in 2013.
