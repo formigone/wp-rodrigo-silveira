@@ -1,60 +1,47 @@
-<?php get_header();?><!-- Def main --><!-- Def main > container  -->
+<?php get_header(); ?>
 
-<div class="col-md-8"><!-- Def main > container > left-col  -->
-<?php
-/*****************************************
- * what will appear on the blog main page
- *****************************************/
-?>
+<div class="col-md-8">
 
-<h1 class="coolTitle">\ Blog</h1>
-<p>This is where I post about web development, general programming, desing, graphics stuff, computers in general, and occasionally about less important things, such as life in the real world.</p>
-<hr/>
+   <h1 class="coolTitle">\ Blog</h1>
 
-<ul class="recent_posts">
-<?php
-   $recent_posts = wp_get_recent_posts( array('numberposts' => 23) );
-      foreach( $recent_posts as $recent ):?>
+   <p>This is where I post about web development, general programming, desing, graphics stuff, computers in general, and
+      occasionally about less important things, such as life in the real world.</p>
+   <hr/>
 
-<li>
-   <h2 class="coolTitle"><a href="<?= get_permalink($recent["ID"]);?>" title="<?php $recent["post_title"];?>"><?= $recent["post_title"]; ?></a></h2>
-   <div class="post_thumbnail">
-      <a href="<?= get_permalink($recent["ID"]);?>" alt="<?php $recent["post_title"];?>">
-         <?= get_the_post_thumbnail( $recent["ID"], 'thumbnail'); ?>
-      </a>
-   </div>
+   <ul class="recent_posts">
+      <?php
+      $recent_posts = wp_get_recent_posts(array('numberposts' => 23));
+      foreach ($recent_posts as $recent):?>
 
-   <div class="post_summary">
-      <p class="post_author" style="margin: 0 0 10px;"><a href="/rodrigo-silveira">Rodrigo Silveira</a> on <?= the_modified_date('M j, Y');?> @ <?= the_modified_date('g:i a');?></p>
+         <li>
+            <h2 class="coolTitle"><a href="<?= get_permalink($recent["ID"]); ?>"
+                                     title="<?php $recent["post_title"]; ?>"><?= $recent["post_title"]; ?></a></h2>
 
-<?php
+            <div class="post_thumbnail">
+               <a href="<?= get_permalink($recent["ID"]); ?>" alt="<?php $recent["post_title"]; ?>">
+                  <?= get_the_post_thumbnail($recent["ID"], 'thumbnail'); ?>
+               </a>
+            </div>
 
-//
-// generate excerpt using first x words of post
-//
+            <div class="post_summary">
+               <p class="post_author" style="margin: 0 0 10px;"><a href="/rodrigo-silveira">Rodrigo Silveira</a>
+                  on <?= the_modified_date('M j, Y'); ?> @ <?= the_modified_date('g:i a'); ?></p>
 
-// display the first 75 words of post
-/***********************************************************************
-$words = 70;
-$preview = preg_split('/[\s]+/',  $recent['post_excerpt'], $words + 1);
-$preview = array_slice($preview, 0, $words);
-$preview = join(' ', $preview);
-***********************************************************************/
-?>
 
-         <p class="post_summary"><?= $recent['post_excerpt']; ?> <strong><a href="<?= get_permalink($recent["ID"]); ?>">Read More</a></strong></p>
-   </div>
-<div style="height:1px;margin:10px 0;clear:both"></div>
-<hr/>
-</li>
+               <p class="post_summary"><?= $recent['post_excerpt']; ?> <strong><a
+                        href="<?= get_permalink($recent["ID"]); ?>">Read More</a></strong></p>
+            </div>
+            <div style="height:1px;margin:10px 0;clear:both"></div>
+            <hr/>
+         </li>
       <?php endforeach; ?>
 
-</ul>
-</div> <!-- End main > container > left-col  -->
-<div class="col-md-4"><!-- Def main > container > right-col  -->
-<?php get_sidebar();?>
-</div> <!-- End main > container > right-col  -->
+   </ul>
+</div>
+<div class="col-md-4">
+   <?php get_sidebar(); ?>
+</div>
 
-</div> <!-- End main > container  -->
-</div> <!-- End main -->
-<?php get_footer();?>
+</div>
+</div>
+<?php get_footer(); ?>
