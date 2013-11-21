@@ -11,9 +11,12 @@
 
    <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/css/cust-bootstrap.min.css"/>
 
-   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-57x57.png"/>
-   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-72x72.png"/>
-   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-114x114.png"/>
+   <link rel="apple-touch-icon-precomposed" sizes="57x57"
+         href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-57x57.png"/>
+   <link rel="apple-touch-icon-precomposed" sizes="72x72"
+         href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-72x72.png"/>
+   <link rel="apple-touch-icon-precomposed" sizes="114x114"
+         href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-114x114.png"/>
 
    <script src="<?php bloginfo("template_url"); ?>/js/jquery.min.js"></script>
    <script src="<?php bloginfo("template_url"); ?>/js/bootstrap.min.js"></script>
@@ -24,7 +27,7 @@
    <div class="container">
       <div class="navbar-header">
 
-         <a href="/" class="navbar-brand"><strong>DDM</strong> Bot</a>
+         <a href="/" class="navbar-brand"><strong>Rodrigo</strong> Silveira</a>
 
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -45,11 +48,12 @@
    </div>
 </nav>
 
-<div class="v2-main">
-   <?php if (is_front_page()): ?>
-      <div id="billboard">
-         <div class="container face">
-            <div class="col-md-10">
+<?php if (is_front_page()): ?>
+   <div class="vert50"></div>
+   <div id="billboard">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12 block">
                <p>
                   <strong>I am a software engineer</strong> fascinated with developing web applications, android mobile
                   apps, and video games for the Nintendo Wii U console system. My first book was published in 2013.
@@ -57,5 +61,8 @@
             </div>
          </div>
       </div>
-   <?php endif; ?>
-   <div class="container light-panel">
+   </div>
+   <div class="vert20"></div>
+<?php else: ?>
+   <div class="vert70"></div>
+<?php endif; ?>
