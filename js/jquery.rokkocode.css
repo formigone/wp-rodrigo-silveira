@@ -1,7 +1,0 @@
-.rokko_code_src { border-collapse: collapse; margin: 0; padding: 0; font-family: monospace; border: 2px solid #fff; box-shadow: 0 0 5px #888; }
-.rokko_code_src .rcs_num { background: #aaf; color: #333; padding: 0 10px; }
-.rokko_code_src .rcs_code { color: #fff; padding: 5px 15px; white-space: pre; }
-.rokko_code_src .rcs_code_e { background: #151515; }
-.rokko_code_src .rcs_code_o { background: #000; }
-.rokko_code_src .rcs_reserved { color: #f00; font-weight: 800; }
-.rokko_code_src .rcs_markup { color: #0f0; }
