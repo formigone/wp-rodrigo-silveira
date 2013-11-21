@@ -10,7 +10,6 @@
    <link href="//fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet" type="text/css">
 
    <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/css/cust-bootstrap.min.css"/>
-   <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/css/style.css"/>
 
    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-57x57.png"/>
    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://formigone.com/pubrecs/icons/rodrigo-silveira-icon-72x72.png"/>
@@ -21,12 +20,11 @@
 </head>
 <body>
 
-<nav id="v2-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top darkNav" role="navigation">
    <div class="container">
       <div class="navbar-header">
-         <a href="/" id="homelink">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="Rodrigo Silveira"/>
-         </a>
+
+         <a href="/" class="navbar-brand"><strong>DDM</strong> Bot</a>
 
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -35,8 +33,7 @@
          </button>
       </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div id="v2-nav-links" class="collapse navbar-collapse navbar-ex1-collapse">
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
          <ul class="nav navbar-nav navbar-right">
             <li><a href="/coding/">/coding</a></li>
             <li><a href="/design/">/design</a></li>
@@ -45,10 +42,9 @@
             <li><a href="/contact-me/">/contact</a></li>
          </ul>
       </div>
-      <!-- /.navbar-collapse -->
-
    </div>
 </nav>
+
 <div class="v2-main">
    <?php if (is_front_page()): ?>
       <div id="billboard">

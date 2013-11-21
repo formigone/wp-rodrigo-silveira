@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 <div class="col-md-8">
+   <div class="hidden">
+      <h1 class="coolTitle">\ Blog</h1>
 
-   <h1 class="coolTitle">\ Blog</h1>
-
-   <p>This is where I post about web development, general programming, desing, graphics stuff, computers in general, and
-      occasionally about less important things, such as life in the real world.</p>
-   <hr/>
-
+      <p>This is where I post about web development, general programming, desing, graphics stuff, computers in general,
+         and
+         occasionally about less important things, such as life in the real world.</p>
+      <hr/>
+   </div>
    <ul class="recent_posts">
       <?php
       $recent_posts = wp_get_recent_posts(array('numberposts' => 23));
