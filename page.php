@@ -1,28 +1,47 @@
-<?php get_header();?><!-- Def main --><!-- Def main > container  -->
+<?php get_header(); ?>
 
-<?php if (is_front_page()): ?>
-      <?php if (have_posts()) : while (have_posts()) : the_post();?>
-      <?php if (is_front_page()) remove_filter( 'the_content', 'wpautop' ); ?>
-      <?php the_content();?>
+<div class="container">
+   <div class="row">
+      <?php if (is_front_page()): ?>
+         <div class="col-md-12">
+         <div class="panel panel-default">
+         <div class="panel-body">
 
-      <?php endwhile; endif; ?>
+         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php if (is_front_page()) {
+               remove_filter('the_content', 'wpautop');
+            } ?>
+            <?php the_content(); ?>
 
-<?php else: ?>
-   <div class="col-md-8 blog-posts"><!-- Def main > container > left-col  -->
-   <?php if (have_posts()) : while (have_posts()) : the_post();?>
+         <?php endwhile; endif; ?>
 
-   <h1 class="coolTitle"><?php the_title();?></h1>
-   <?php if (is_front_page()) remove_filter( 'the_content', 'wpautop' ); ?>
-   <?php the_content();?>
+         </div><?php /* eo_panel > body */ ?>
+         </div><?php /* eo_panel */ ?>
+         </div><?php /* eo_col-left */ ?>
+      <?php else: ?>
+         <div class="col-md-9">
+         <div class="panel panel-default">
+         <div class="panel-body">
+         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-   <?php endwhile; endif; ?>
+            <div class="jumbotron">
+               <h1 class="coolTitle"><?php the_title(); ?></h1>
+            </div>
+            <?php if (is_front_page()) {
+               remove_filter('the_content', 'wpautop');
+            } ?>
+            <?php the_content(); ?>
 
-   </div> <!-- End main > container > left-col  -->
-   <div class="col-md-4"><!-- Def main > container > right-col  -->
-   <?php get_sidebar();?>
-   </div> <!-- End main > container > right-col  -->
-<?php endif; ?>
+         <?php endwhile; endif; ?>
+         </div><?php /* eo_panel > body */ ?>
+         </div><?php /* eo_panel */ ?>
+         </div><?php /* eo_col-left */ ?>
+         <div class="col-md-3">
+         <?php get_sidebar(); ?>
+         </div><?php /* eo_col-right */ ?>
+      <?php endif; ?>
 
-</div> <!-- End main > container  -->
-</div> <!-- End main -->
-<?php get_footer();?>
+   </div><?php /* eo_row */ ?>
+</div><?php /* eo_container */ ?>
+
+<?php get_footer(); ?>
