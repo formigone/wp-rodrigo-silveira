@@ -1,5 +1,7 @@
 # Rodrigo Silveira: Rokko WP Theme
 
+http://www.rodrigo-silveira.com
+
 Just another WordPress theme... my intention was to have a techie look and feel, since that's what my portfolio/blog is all about. 
 
 Uses Twitter Bootstrap 3 to help with full responsiveness, as well as cool components and widgets out of the box.
