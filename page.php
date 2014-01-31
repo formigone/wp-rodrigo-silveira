@@ -18,7 +18,7 @@
          </div><?php /* eo_panel > body */ ?>
          </div><?php /* eo_panel */ ?>
          </div><?php /* eo_col-left */ ?>
-      <?php else: ?>
+      <?php else /* not front page */: ?>
          <div class="col-md-9">
          <div class="panel panel-default">
          <div class="panel-body">

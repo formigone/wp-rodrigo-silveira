@@ -9,7 +9,8 @@ Uses Twitter Bootstrap 3 to help with full responsiveness, as well as cool compo
 ## To do
 
 * fix homepage
-   * all tiles
+   * all tiles >> content needs to be tweaked
+   * use bootstrap instead of width::%
 * fix blog roll page
    * inspired by http://www.webdesignerdepot.com/
 * display tags cloud
