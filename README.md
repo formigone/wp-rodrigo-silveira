@@ -8,18 +8,14 @@ Uses Twitter Bootstrap 3 to help with full responsiveness, as well as cool compo
 
 ## To do
 
-* fix homepage
-   * all tiles >> content needs to be tweaked
-   * use bootstrap instead of width::%
-* fix blog roll page
-   * inspired by http://www.webdesignerdepot.com/
-* display tags cloud
+* make category and serps pages like blog roll template
 * article view
    * display tags
 * update articles
    * date
    * category
    * keywords
+   * normalize thumbnails (3x9 ?)
 * add responsive iframe css
 ```css
 .responsiveIframe  {
