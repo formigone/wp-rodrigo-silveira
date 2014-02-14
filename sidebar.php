@@ -18,5 +18,3 @@ else
 	if( is_active_sidebar( 'clear-sidebar' ) )
 		dynamic_sidebar( 'clear-sidebar' );
 }
-
-?>
