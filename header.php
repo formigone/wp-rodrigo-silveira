@@ -20,6 +20,9 @@
 
    <script src="<?php bloginfo("template_url"); ?>/js/jquery.min.js"></script>
    <script src="<?php bloginfo("template_url"); ?>/js/bootstrap.min.js"></script>
+
+   <link rel="stylesheet" type="text/css" href="<?php bloginfo("template_url"); ?>/css/component.css" />
+   <script src="<?php bloginfo("template_url"); ?>/js/modernizr.custom.js"></script>
 </head>
 <body>
 

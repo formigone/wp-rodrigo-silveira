@@ -13,6 +13,21 @@
             Rodrigo Silveira</a>. All rights reserved.</p>
    </div>
 </div>
+<script src="<?php bloginfo("template_url"); ?>/js/masonry.pkgd.min.js"></script>
+<script src="<?php bloginfo("template_url"); ?>/js/imagesloaded.js"></script>
+<script src="<?php bloginfo("template_url"); ?>/js/classie.js"></script>
+<script src="<?php bloginfo("template_url"); ?>/js/AnimOnScroll.js"></script>
+
+<script>
+   $(function(){
+      new AnimOnScroll( document.getElementById( 'grid' ), {
+         minDuration : 0.4,
+         maxDuration : 0.7,
+         viewportFactor : 0.2
+      } );
+   });
+</script>
+
 <script>
    var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-15090706-1']);
