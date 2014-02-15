@@ -48,9 +48,9 @@
                                  <?php $posttags = wp_get_post_tags($recent["ID"]); ?>
                                  <?php if ($posttags): ?>
                                     <?php foreach ($posttags as $_tag): ?>
-                                       <span class="label text-muted">
-                                    <a href="<?= get_tag_link($_tag->term_id); ?>"><?= $_tag->name; ?></a>
-                                 </span>
+                                       <span class="label label-default">
+                                          <a href="<?= get_tag_link($_tag->term_id); ?>"><?= $_tag->name; ?></a>
+                                       </span>&nbsp;
                                     <?php endforeach; ?>
                                  <?php endif; ?>
                               </p>
