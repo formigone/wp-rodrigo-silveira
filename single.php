@@ -39,23 +39,19 @@
 
                   <?php the_content(); ?>
 
-                  <h1>\ Post your comments</h1>
+<blockquote><h1>\ Post your comments</h1></blockquote>
 
-                  <div id="fb-root"></div>
-                  <script>(function (d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=131034187065096";
-                        fjs.parentNode.insertBefore(js, fjs);
-                     }(document, 'script', 'facebook-jssdk'));
-                  </script>
-                  <div
-                     class="fb-comments"
-                     data-href="<?= the_permalink(); ?>"
-                     data-width="320"
-                     data-num-posts="23"></div>
+                  <p id="gp_fake_spacer">&nbsp;</p>
+<script src="https://apis.google.com/js/plusone.js"></script>
+<div id="gp_comments"></div>
+<script>
+gapi.comments.render('gp_comments', {
+    href: window.location,
+    width: $("#gp_fake_spacer").width() - 10,
+    first_party_property: 'BLOGGER',
+    view_type: 'FILTERED_POSTMOD'
+});
+</script>
                <?php endwhile; ?>
             </div><?php /* eo_panel > body */ ?>
          </div><?php /* eo_panel */ ?>
@@ -123,3 +119,4 @@
    ]});
 </script>
 <!-- AddThis Welcome END -->
+

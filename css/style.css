@@ -114,3 +114,7 @@ h1 {
 /* Large devices (large desktops, 1200px and up) */
 @media ( min-width : 1200px) {
 }
+
+#instantclick-bar {
+    background: #006505;
+}
