@@ -1,75 +1,187 @@
 <?php get_header(); ?>
 
-<div class="container">
-   <div class="row">
-      <div class="col-md-9">
-         <div class="panel panel-default">
-            <div class="panel-body">
-               <h1 class="coolTitle">Blog</h1>
+<main id="main">
 
-               <p>Welcome to my tech blog! The main purpose of this blog is for me to post notes about things I've
-                  learned, demonstrations of things I've coded, the occasional tutorial, etc.</p>
-            </div><?php /* eo_panel > body */ ?>
-         </div><?php /* eo_panel */ ?>
+   <div class="container">
+
+      <div class="row section topspace">
+         <div class="col-md-12">
+            <p class="lead text-center text-muted">Let me tell you something my friend. hope is a dangerous thing. hope
+               can drive a man insane. you <a href="about.html">measure</a> yourself by the people who measure
+               themselves by you. it only took me <a href="sidebar-right.html">six days</a>. </p>
+         </div>
+      </div>
+      <!-- / section -->
+
+      <div class="row section featured topspace">
+         <h2 class="section-title"><span>Services</span></h2>
 
          <div class="row">
-            <?php $recent_posts = wp_get_recent_posts(array('numberposts' => 50)); ?>
-            <ul class="grid effect-<?= rand(1, 8); ?>" id="grid">
-               <?php foreach ($recent_posts as $recent): ?>
-                  <li>
-                     <div class="gridCard">
-                        <div class="meBlogTile">
-                           <div class="meBlogTileHeader">
-                              <a href="<?= get_permalink($recent["ID"]); ?>">
-                                 <?= get_the_post_thumbnail($recent["ID"], 'thumbnail'); ?>
-                              </a>
-                           </div>
+            <div class="col-sm-6 col-md-3">
+               <h3 class="text-center">Custom website design</h3>
 
-                           <div class="meBlogTileBody">
-                              <h3>
-                                 <a href="<?= get_permalink($recent["ID"]); ?>">
-                                    <?= $recent["post_title"]; ?>
-                                 </a>
-                              </h3>
+               <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the
+                  same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect
+                  men.</p>
 
-                              <p>
-                                 <small>
-                                    <a
-                                       href="https://plus.google.com/103737161295645708507?rel=author"
-                                       rel="publisher">Rodrigo Silveira</a>, <?= the_modified_date('M j, Y'); ?>
-                                 </small>
-                              </p>
+               <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+               <h3 class="text-center">Wordpress integration</h3>
 
-                              <p>
-                                 <?= $recent['post_excerpt']; ?>
-                              </p>
+               <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the
+                  same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect
+                  men.</p>
 
-                              <p>
-                                 <?php $posttags = wp_get_post_tags($recent["ID"]); ?>
-                                 <?php if ($posttags): ?>
-                                    <?php foreach ($posttags as $_tag): ?>
-                                       <span class="label label-default">
-                                          <a href="<?= get_tag_link($_tag->term_id); ?>"><?= $_tag->name; ?></a>
-                                       </span>&nbsp;
-                                    <?php endforeach; ?>
-                                 <?php endif; ?>
-                              </p>
+               <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+               <h3 class="text-center">Application development</h3>
 
-                              <div class="clearfix"></div>
-                           </div>
-                        </div>
-                     </div>
-                  </li>
-               <?php endforeach; ?>
-            </ul>
+               <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the
+                  same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect
+                  men.</p>
+
+               <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+               <h3 class="text-center">SEO &amp; SEM services</h3>
+
+               <p>I don't think they tried to market it to the billionaire, spelunking, base-jumping crowd. i did the
+                  same thing to gandhi, he didn't eat for three weeks. i once heard a wise man say there are no perfect
+                  men.</p>
+
+               <p class="text-center"><a href="" class="btn btn-action">Read more</a></p>
+            </div>
+         </div>
+      </div>
+      <!-- / section -->
+
+      <div class="row section recentworks topspace">
+
+         <h2 class="section-title"><span>Recent Works</span></h2>
+
+         <div class="thumbnails recentworks row">
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Sample title - big data solutions</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a> | <a
+                     href="">Logotype</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Pure ipsum - development services for people</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Lorem studios - interior and patio design</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Pure ipsum - development services for people</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Wordpress</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Lorem studios - interior and patio design</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+               <a class="thumbnail" href="sidebar-right.html">
+						<span class="img">
+							<img src="assets/images/s1.jpg" alt="">
+							<span class="cover"><span class="more">See details &rarr;</span></span>
+						</span>
+                  <span class="title">Lorem studios - interior and patio design</span>
+               </a>
+               <span class="details"><a href="">Web design</a> | <a href="">Logotype</a></span>
+               <h4></h4>
+
+               <p></p>
+            </div>
          </div>
 
-      </div><?php /* eo_col-left */ ?>
-      <div class="col-md-3">
-         <?php get_sidebar(); ?>
-      </div><?php /* eo_col-right */ ?>
+      </div>
+      <!-- /section -->
 
-   </div><?php /* eo_row */ ?>
-</div><?php /* eo_container */ ?>
+      <div class="row section topspace">
+         <div class="panel panel-cta">
+            <div class="panel-body">
+               <div class="col-lg-8">
+                  <p>A simple, nice-looking <b>call to action box</b>. Boxing is about respect. getting it for yourself,
+                     and taking it away from the other guy. no, this is mount everest. </p>
+               </div>
+               <div class="col-lg-4 text-right">
+                  <a href="http://www.gettemplate.com/downloads/initio.zip " class="btn btn-primary btn-lg">Download
+                     template</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- /section -->
+
+      <div class="row section clients topspace">
+         <h2 class="section-title"><span>Clients</span></h2>
+
+         <div class="col-lg-12">
+            <p>
+               <img src="assets/images/sample_clients.png" alt="">
+            </p>
+         </div>
+      </div>
+      <!-- /section -->
+
+   </div>
+   <!-- /container -->
+
+</main>
 
 <?php get_footer(); ?>

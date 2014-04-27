@@ -1,22 +1,84 @@
-<div id="footer">
+<footer id="footer">
    <div class="container">
-      <ul>
-         <li><strong>R:\></strong></li>
-         <li><a href="/coding/" id="footerLinkCoding">coding</a></li>
-         <li><a href="/design/" id="footerLinkDesign">design</a></li>
-         <li><a href="/rodrigo-silveira/" id="footerLinkAbout">about_me</a></li>
-         <li><a href="/blog" id="footerLinkBlog">blog</a></li>
-         <li><a href="/contact-me/" id="footerLinkContact">contact</a></li>
-      </ul>
-      <p class="pull-right">Copyright (c) 2011
-         <a href="https://plus.google.com/103737161295645708507?rel=author" rel="publisher">
-            Rodrigo Silveira</a>. All rights reserved.</p>
+      <div class="row">
+         <div class="col-md-3 widget">
+            <h3 class="widget-title">Contact</h3>
+
+            <div class="widget-body">
+               <p>+234 23 9873237<br>
+                  <a href="mailto:#">some.email@somewhere.com</a><br>
+                  <br>
+                  234 Hidden Pond Road, Ashland City, TN 37015
+               </p>
+            </div>
+         </div>
+
+         <div class="col-md-3 widget">
+            <h3 class="widget-title">Follow me</h3>
+
+            <div class="widget-body">
+               <p class="follow-me-icons">
+                  <a href=""><i class="fa fa-twitter fa-2"></i></a>
+                  <a href=""><i class="fa fa-dribbble fa-2"></i></a>
+                  <a href=""><i class="fa fa-github fa-2"></i></a>
+                  <a href=""><i class="fa fa-facebook fa-2"></i></a>
+               </p>
+            </div>
+         </div>
+
+         <div class="col-md-3 widget">
+            <h3 class="widget-title">Text widget</h3>
+
+            <div class="widget-body">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste
+                  aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci
+                  maxime!</p>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, nihil natus explicabo ipsum quia iste
+                  aliquid repellat eveniet velit ipsa sunt libero sed aperiam id soluta officia asperiores adipisci
+                  maxime!</p>
+            </div>
+         </div>
+
+         <div class="col-md-3 widget">
+            <h3 class="widget-title">Form widget</h3>
+
+            <div class="widget-body">
+               <p>+234 23 9873237<br>
+                  <a href="mailto:#">some.email@somewhere.com</a><br>
+                  <br>
+                  234 Hidden Pond Road, Ashland City, TN 37015
+               </p>
+            </div>
+         </div>
+
+      </div>
+      <!-- /row of widgets -->
    </div>
-</div>
-<script data-no-instant src="<?php bloginfo("template_url"); ?>/js/masonry.pkgd.min.js"></script>
-<script data-no-instant src="<?php bloginfo("template_url"); ?>/js/imagesloaded.js"></script>
-<script data-no-instant src="<?php bloginfo("template_url"); ?>/js/classie.js"></script>
-<script data-no-instant src="<?php bloginfo("template_url"); ?>/js/AnimOnScroll.js"></script>
+</footer>
+
+<footer id="underfooter">
+   <div class="container">
+      <div class="row">
+
+         <div class="col-md-6 widget">
+            <div class="widget-body">
+               <p>234 Hidden Pond Road, Ashland City, TN 37015 </p>
+            </div>
+         </div>
+
+         <div class="col-md-6 widget">
+            <div class="widget-body">
+               <p class="text-right">
+                  Copyright &copy; 2014, Your awesome name here<br>
+                  Design: <a href="http://www.gettemplate.com" rel="designer">Initio by GetTemplate</a></p>
+            </div>
+         </div>
+
+      </div>
+      <!-- /row of widgets -->
+   </div>
+</footer>
 
 <script src="<?php bloginfo("template_url"); ?>/js/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>
@@ -24,15 +86,6 @@
 </script>
 
 <script data-no-instant>
-   var animScroll = function () {
-      new AnimOnScroll(document.getElementById('grid'), {
-         minDuration: 0.4,
-         maxDuration: 0.7,
-         viewportFactor: 0.2
-      });
-   };
-
-
    var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-15090706-1']);
    _gaq.push(['_trackPageview']);
@@ -46,10 +99,8 @@
       s.parentNode.insertBefore(ga, s);
    };
 
-   InstantClick.on('change', animScroll);
    InstantClick.on('change', doGaq);
 
-   animScroll();
    doGaq();
 </script>
 </body>
