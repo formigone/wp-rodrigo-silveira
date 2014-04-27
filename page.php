@@ -26,17 +26,17 @@
    <div class="container pt">
       <div class="row mt">
          <div class="col-md-9">
-         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="col-lg-8 col-lg-offset-2 centered">
-               <h3><?php the_title(); ?></h3>
-               <hr>
-            </div>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+               <div class="col-lg-8 col-lg-offset-2 centered">
+                  <h3><?php the_title(); ?></h3>
+                  <hr>
+               </div>
 
-            <div class="col-lg-12">
-               <?php the_content(); ?>
-            </div>
+               <div class="col-lg-12">
+                  <?php the_content(); ?>
+               </div>
 
-         <?php endwhile; endif; ?>
+            <?php endwhile; endif; ?>
          </div>
          <div class="col-md-3 well">
             <?php get_sidebar(); ?>
