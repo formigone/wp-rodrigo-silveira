@@ -11,6 +11,7 @@
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Alice|Open+Sans:400,300,700">
    <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/assets/css/styles.css">
+   <link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/css/style.css">
 
    <script src="<?php bloginfo("template_url"); ?>/js/jquery.min.js"></script>
    <script src="<?php bloginfo("template_url"); ?>/js/bootstrap.min.js"></script>
@@ -24,6 +25,15 @@
 
    <?php if (is_front_page()): ?>
       <div id="head" class="parallax" parallax-speed="2">
+         <h1 id="logo" class="text-center">
+            <img class="img-circle" src="<?php bloginfo(" template_url"); ?>/assets/images/guy.jpg" alt="">
+            <span class="title">Rodrigo Silveira</span>
+            <span class="tagline">Software Engineer</span>
+         </h1>
+      </div>
+   <?php endif; ?>
+   <?php if (!is_front_page()): ?>
+      <div id="head" class="parallax" parallax-speed="1">
          <h1 id="logo" class="text-center">
             <img class="img-circle" src="<?php bloginfo(" template_url"); ?>/assets/images/guy.jpg" alt="">
             <span class="title">Rodrigo Silveira</span>

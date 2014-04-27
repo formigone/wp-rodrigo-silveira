@@ -25,57 +25,53 @@ $data = array(
 ?>
 
 <?php get_header(); ?>
-<main id="main">
-   <div class="container">
-      <div class="row section recentworks topspace">
-         <?php if (is_front_page()): ?>
-            <h2 class="section-title"><span>Recent Works</span></h2>
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-               <?php if (is_front_page()) {
-                  remove_filter('the_content', 'wpautop');
-               } ?>
-               <?php the_content(); ?>
-
-            <?php endwhile; endif; ?>
-         <?php else: /* not front page */ ?>
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-               <div class="jumbotron">
-                  <h1 class="coolTitle"><?php the_title(); ?></h1>
-               </div>
-               <?php if (is_front_page()) {
-                  remove_filter('the_content', 'wpautop');
-               } ?>
-               <?php the_content(); ?>
-
-            <?php endwhile; endif; ?>
-            <?php get_sidebar(); ?>
-         <?php endif; ?>
-      </div>
-      <!-- /section -->
-   </div>
-</main>
-
-<?php get_footer(); ?>
-
-<!-- homepage data start
-<div class="thumbnails recentworks row">
-   <?php foreach ($data as $d): ?>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-         <a class="thumbnail" href="sidebar-right.html">
+   <main id="main">
+      <div class="container">
+         <div class="row section recentworks topspace">
+            <?php if (is_front_page()): ?>
+               <h2 class="section-title"><span><?php the_title(); ?></span></h2>
+               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                  <?php if (is_front_page()) {
+                     remove_filter('the_content', 'wpautop');
+                  } ?>
+                  <?php eval('$data = ' . get_the_content()); ?>
+                  <div class="thumbnails recentworks row">
+                     <?php foreach ($data as $d): ?>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                           <a class="thumbnail" href="sidebar-right.html">
 						<span class="img">
 							<img src="<?= $d['img']; ?>" alt="<?= $d['title']; ?>">
 							<span class="cover"><span class="more">details &rarr;</span></span>
 						</span>
-            <span class="title"><?= $d['title']; ?></span>
-         </a>
+                              <span class="title"><?= $d['title']; ?></span>
+                           </a>
       <span class="details">
          <a href="<?= $d['href']; ?>">details</a>
       </span>
-         <h4></h4>
+                           <h4></h4>
 
-         <p></p>
+                           <p></p>
+                        </div>
+                     <?php endforeach; ?>
+                  </div>
+               <?php endwhile; endif; ?>
+            <?php else: /* not front page */ ?>
+               <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                  <div class="jumbotron">
+                     <h1 class="coolTitle"><?php the_title(); ?></h1>
+                  </div>
+                  <?php if (is_front_page()) {
+                     remove_filter('the_content', 'wpautop');
+                  } ?>
+                  <?php the_content(); ?>
+
+               <?php endwhile; endif; ?>
+               <?php get_sidebar(); ?>
+            <?php endif; ?>
+         </div>
+         <!-- /section -->
       </div>
-   <?php endforeach; ?>
-</div>
-homepage data end -->
+   </main>
+
+<?php get_footer(); ?>
