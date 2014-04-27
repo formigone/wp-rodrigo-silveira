@@ -15,18 +15,19 @@
          <div class="col-lg-4">
             <h4>Social Accounts</h4>
             <p>
-               <a href="#">Google+</a><br/>
-               <a href="#">Youtube</a><br/>
-               <a href="#">LinkedIn</a><br/>
-               <a href="#">Facebook</a><br/>
-               <a href="#">GitHub</a><br/>
-               <a href="#">Stack Overflow</a>
+               <a href="https://plus.google.com/+RodrigoSilveiraSoftware/posts">Google+</a><br/>
+               <a href="https://www.youtube.com/user/12ig0">Youtube</a><br/>
+               <a href="https://www.linkedin.com/in/rodrigo0silveira">LinkedIn</a><br/>
+               <a href="https://www.facebook.com/rodrigo.silveira.web.developer">Facebook</a><br/>
+               <a href="https://github.com/formigone">GitHub</a><br/>
+               <a href="http://stackoverflow.com/users/774907/rodrigo-silveira">Stack Overflow</a>
             </p>
          </div>
 
          <div class="col-lg-4">
-            <h4>About Stanley</h4>
-            <p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
+            <h4>Mission Statement</h4>
+            <span class="text-muted">I don't know who you are. I don't know what you want. If you are looking for average, I can tell you I don't have that in me. But what I do have are a very particular set of skills, skills I have acquired over a very long career. Skills that make me a dream-come-true for people like you. If you don't care about greatness, that'll be the end of it. I will not look for you, I will not pursue you. <br/>.
+               But if you do... <a href="/contact-me">#!/let/me/know --now</a></span>
          </div>
       </div>
       <p class="text-copyright">&copy; 2009-<?= date('Y', time()); ?> Rodrigo Silveira. All rights reserved.</p>

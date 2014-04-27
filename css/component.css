@@ -293,3 +293,23 @@
 .text-thin {
     font-weight: 300 !important;
 }
+
+.btn-soc-gp {
+    background: #da4735;
+    color: #fff;
+}
+
+.btn-soc-yt {
+    background: #d42021;
+    color: #fff;
+}
+
+.btn-soc-li {
+    background: #0274b3;
+    color: #fff;
+}
+
+.btn-soc-fb {
+    background: #3c599f;
+    color: #fff;
+}

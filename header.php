@@ -9,6 +9,15 @@
 
    <title>Rodrigo Silveira</title>
 
+   <link rel="icon" type="image/png" href="<?php bloginfo("template_url"); ?>/favicon.png" />
+
+   <link rel="apple-touch-icon-precomposed" sizes="57x57"
+         href="<?php bloginfo("template_url"); ?>/favicon-57.png"/>
+   <link rel="apple-touch-icon-precomposed" sizes="72x72"
+         href="<?php bloginfo("template_url"); ?>/favicon-72.png"/>
+   <link rel="apple-touch-icon-precomposed" sizes="114x114"
+         href="<?php bloginfo("template_url"); ?>/favicon-114.png"/>
+
    <link href="<?php bloginfo("template_url"); ?>/assets/css/bootstrap.css" rel="stylesheet">
    <link href="<?php bloginfo("template_url"); ?>/assets/css/main.css" rel="stylesheet">
    <link href="<?php bloginfo("template_url"); ?>/css/component.css" rel="stylesheet">
