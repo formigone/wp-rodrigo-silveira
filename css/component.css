@@ -283,3 +283,13 @@
 .sideModTop li {
     padding: 5px 0;
 }
+
+.text-copyright {
+    color: #555 !important;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.text-thin {
+    font-weight: 300 !important;
+}
