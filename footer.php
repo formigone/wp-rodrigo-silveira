@@ -1,23 +1,39 @@
 <div id="footer">
    <div class="container">
-      <ul>
-         <li><strong>R:\></strong></li>
-         <li><a href="/coding/" id="footerLinkCoding">coding</a></li>
-         <li><a href="/design/" id="footerLinkDesign">design</a></li>
-         <li><a href="/rodrigo-silveira/" id="footerLinkAbout">about_me</a></li>
-         <li><a href="/blog" id="footerLinkBlog">blog</a></li>
-         <li><a href="/contact-me/" id="footerLinkContact">contact</a></li>
-      </ul>
-      <p class="pull-right">Copyright (c) 2011
-         <a href="https://plus.google.com/103737161295645708507?rel=author" rel="publisher">
-            Rodrigo Silveira</a>. All rights reserved.</p>
+      <div class="row">
+         <div class="col-lg-4">
+            <h4>My Bunker</h4>
+            <p>
+               Some Address 987,<br/>
+               +34 9054 5455, <br/>
+               Madrid, Spain.
+            </p>
+         </div><!-- /col-lg-4 -->
+
+         <div class="col-lg-4">
+            <h4>My Links</h4>
+            <p>
+               <a href="#">Dribbble</a><br/>
+               <a href="#">Twitter</a><br/>
+               <a href="#">Facebook</a>
+            </p>
+         </div><!-- /col-lg-4 -->
+
+         <div class="col-lg-4">
+            <h4>About Stanley</h4>
+            <p>This cute theme was created to showcase your work in a simple way. Use it wisely.</p>
+         </div><!-- /col-lg-4 -->
+
+      </div>
+
    </div>
 </div>
+
+<script src="<?php bloginfo("template_url"); ?>/assets/js/bootstrap.min.js"></script>
 <script data-no-instant src="<?php bloginfo("template_url"); ?>/js/masonry.pkgd.min.js"></script>
 <script data-no-instant src="<?php bloginfo("template_url"); ?>/js/imagesloaded.js"></script>
 <script data-no-instant src="<?php bloginfo("template_url"); ?>/js/classie.js"></script>
 <script data-no-instant src="<?php bloginfo("template_url"); ?>/js/AnimOnScroll.js"></script>
-
 <script src="<?php bloginfo("template_url"); ?>/js/instantclick.min.js" data-no-instant></script>
 <script data-no-instant>
    InstantClick.init();

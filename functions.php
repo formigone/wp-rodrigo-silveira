@@ -55,6 +55,17 @@ if(function_exists('register_sidebar'))
     )
 );
 
+if(function_exists('register_sidebar'))
+    register_sidebar(array(
+        'name' => 'Homepage Message',
+        'id' => 'homepage-message',
+        'before_widget' => '<p>',
+        'after_widget' => '</p>',
+        'before_title' => '<h1>',
+        'after_title' => '</h1>',
+    )
+);
+
 
 // For category lists on category archives: Returns other categories except the current one (redundant)
 function cats_meow($glue) {
