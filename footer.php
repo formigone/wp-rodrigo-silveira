@@ -31,7 +31,7 @@
          </div>
       </div>
       <p class="text-copyright">
-         <img src="/favicon.png" class="img-circle" style="width: 24px;margin: -5px 10px 0 0;"> &copy; 2009-<?= date('Y', time()); ?> Rodrigo Silveira. All rights reserved.</p>
+         <img src="<?php bloginfo("template_url"); ?>/favicon.png" class="img-circle" style="width: 24px;margin: -5px 10px 0 0;"> &copy; 2009-<?= date('Y', time()); ?> Rodrigo Silveira. All rights reserved.</p>
    </div>
 </div>
 
@@ -70,11 +70,17 @@
       s.parentNode.insertBefore(ga, s);
    };
 
-   InstantClick.on('change', animScroll);
-   InstantClick.on('change', doGaq);
+   InstantClick.on('change', function(){
+      animScroll();
+
+      var pageTracker = _gat._createTracker('UA-15090706-1');
+      pageTracker._trackPageview(); 
+  });
 
    animScroll();
    doGaq();
+
+   InstantClick.init();
 </script>
 </body>
 </html>

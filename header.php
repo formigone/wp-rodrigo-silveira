@@ -46,7 +46,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/">Rodrigo Silveira</a>
+         <a class="navbar-brand" href="/">
+            <img src="<?php bloginfo("template_url"); ?>/favicon.png" class="img-circle" style="width: 24px;margin: -4px 10px 0 0;">Rodrigo Silveira</a>
       </div>
       <div class="navbar-collapse collapse">
          <ul class="nav navbar-nav navbar-right">
