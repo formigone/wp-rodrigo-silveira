@@ -30,7 +30,8 @@
                But if you do... <a href="/contact-me">#!/let/me/know --now</a></span>
          </div>
       </div>
-      <p class="text-copyright">&copy; 2009-<?= date('Y', time()); ?> Rodrigo Silveira. All rights reserved.</p>
+      <p class="text-copyright">
+         <img src="/favicon.png" class="img-circle" style="width: 24px;margin: -5px 10px 0 0;"> &copy; 2009-<?= date('Y', time()); ?> Rodrigo Silveira. All rights reserved.</p>
    </div>
 </div>
 

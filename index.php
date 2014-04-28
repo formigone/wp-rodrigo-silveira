@@ -23,7 +23,7 @@
 
                <div class="media">
                   <a class="pull-left" href="<?= get_permalink($recent["ID"]); ?>">
-                     <?= preg_replace('/http:\/\/rodrigo-silveira.com/', '', get_the_post_thumbnail($recent["ID"], 'thumbnail', array('class' => 'media-object'))); ?>
+                     <?= get_the_post_thumbnail($recent["ID"], 'thumbnail', array('class' => 'media-object')); ?>
                   </a>
                   <div class="media-body">
                      <p><?= $recent['post_excerpt']; ?></p>
