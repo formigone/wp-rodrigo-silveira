@@ -47,11 +47,13 @@
 
 <script data-no-instant>
    var animScroll = function () {
-      new AnimOnScroll(document.getElementById('grid'), {
-         minDuration: 0.4,
-         maxDuration: 0.7,
-         viewportFactor: 0.2
-      });
+      try {
+         new AnimOnScroll(document.getElementById('grid'), {
+            minDuration: 0.4,
+            maxDuration: 0.7,
+            viewportFactor: 0.2
+         });
+      } catch(e){}
    };
 
 
